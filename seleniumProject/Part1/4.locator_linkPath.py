@@ -22,11 +22,9 @@ time.sleep(2)
 # product = driver.find_element(By.LINK_TEXT, value="Sauce Labs Bolt T-Shirt")
 # product.click()
 
-
 # finding product using partial LINKTEXT
 # product = driver.find_element(By.PARTIAL_LINK_TEXT, value="T-Shirt (Red)")
 # product.click()
-
 
 # finding product using partial TagName
 # tag1 = driver.find_element(By.TAG_NAME, value="button")
@@ -39,7 +37,6 @@ time.sleep(2)
 # finding product using partial CSS_Selector class
 # classSelector = driver.find_element(By.CSS_SELECTOR, value=".inventory_item_name ")
 # classSelector.click()
-
 
 # finding product using partial ID
 classSelector = driver.find_element(By.CSS_SELECTOR, value="#add-to-cart-sauce-labs-backpack ")

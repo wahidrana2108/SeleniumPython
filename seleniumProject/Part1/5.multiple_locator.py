@@ -16,5 +16,10 @@ user_field[0].send_keys("standard_user")
 user_field[1].send_keys("secret_sauce")
 user_field[2].click()
 
+# find multiple elements using multiple selectors
+allProducts = driver.find_elements(By.CLASS_NAME, value="inventory_item_name")
+for product in allProducts:
+    print(product.text)
+
 time.sleep(2)
 driver.quit()
