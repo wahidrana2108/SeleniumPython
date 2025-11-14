@@ -7,11 +7,11 @@ print(driver.title)
 time.sleep(2)
 
 # checkbox
-# checkBoxes = driver.find_elements(By.XPATH, value="//input[@type='checkbox']")
-# for i in range(len(checkBoxes)):
-#     if not checkBoxes[i].is_selected():
-#         checkBoxes[i].click()
-# time.sleep(5)
+checkBoxes = driver.find_elements(By.XPATH, value="//input[@type='checkbox']")
+for i in range(len(checkBoxes)):
+    if not checkBoxes[i].is_selected():
+        checkBoxes[i].click()
+time.sleep(5)
 
 # radioButton select Mercedes
 radioButtons = driver.find_elements(By.XPATH, value="//input[@type='radio']")
