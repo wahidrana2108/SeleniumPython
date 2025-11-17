@@ -4,7 +4,7 @@ import time
 
 driver = webdriver.Edge()
 driver.maximize_window()
-driver.get("http://127.0.0.1:5500/seleniumProject/iframePracticeSite/index.html")
+driver.get("http://127.0.0.1:5500/iframePracticeSite/index.html")
 
 # left frame
 def left_frame():
