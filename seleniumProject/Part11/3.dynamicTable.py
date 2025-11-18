@@ -23,7 +23,7 @@ def print_all():
             data = driver.find_element(By.XPATH, cell_path)
             print(data.text)
 
-# # printing specific cell data
+# printing specific cell data
 def print_selected():
     for row in range(1, len(rows)+1):
         element = "Chrome"
@@ -37,6 +37,7 @@ def print_selected():
             given = driver.find_element(By.ID, "chrome-cpu").text
 
             if cpu.text in given:
+                print(given)
                 print("CPU usage matched!")
                 print("All test passed")
             else:
